@@ -1,0 +1,66 @@
+     
+        table, th, td { 
+            border: 1px solid white;
+        }
+
+        body{
+            font-family: 'Josefin Slab', serif; 
+        background: linear-gradient(rgb(149, 165, 166),rgb(44, 62, 80), rgb(25, 42, 86));
+    }
+        h1,h5,li,td,p{
+            color: rgb(206, 220, 231);
+        }
+        h1,h2,h5,b{
+            color:whitesmoke;font-weight: bolder;
+        }
+        img {
+             border-radius: 8px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.482), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+            }
+            .container {
+                position: relative;
+                width: 20%;
+            }
+
+.image {
+  display: block;
+  width: 120px;
+  height: 150px;
+}
+
+.overlay {
+    border-radius: 8px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.482), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgb(149, 158, 166),rgb(44, 62, 80), rgb(25, 42, 86));
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container{
+    height: 150px;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.container:hover .overlay {
+  width: 121px;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

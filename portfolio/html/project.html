@@ -6,21 +6,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/portfolio/Css/style.css">
-    <title>Nitheshwar Sivakumar</title>
-    <link rel="icon" type="image/png" href="/portfolio/images/man.png" >
+    <link rel="stylesheet" href="/portfolio/Css/project.css">
+    <title>Projects</title>
+    <link rel="icon" type="image/png" href="/portfolio/images/man.png">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav>
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-            Nitheshwar <span>Shivakumar</span>
-        </div>
         <div class="nav-container">
             <div class="links">
-                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
-                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Skills</a>
-                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Introduction</a>
-                <a href="/Ecommerce-Websites/Shoes-Website-1/index.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Projects</a>
-                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+                <a href="/portfolio/html/index.html">Home</a>
+                <a href="">Skills</a>
+                <a href="/portfolio/html/project.html">Projects</a>
             </div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -28,17 +26,81 @@
             <div class="links">
                 <a href="">Home</a>
                 <a href="">Skills</a>
-                <a href="">Introduction</a>
-                
-                <a href="">Contact</a>
+                <a href="/portfolio/html/project.html">Projects</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>    
         </div>
-    </nav>
-    <section>
-        <div class="ecoms">
-            <a href="/Ecommerce-Websites/html/shop.html">/E-coms</a>
+        <div class="content">
+            <h1><span>Projects</span></h1>
         </div>
-    </section>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="main-container">
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up">
+            <div class="flip-container">
+                <div class="flipper">
+                    <!-- Front Side (Image) -->
+                    <div class="front">
+                        <img src="/portfolio/images/e-com.png" alt="E-commerce Site">
+                    </div>
+                    <!-- Back Side (Details) -->
+                    <div class="back">
+                        <h3>E-commerce Website</h3>
+                        <p>A responsive e-commerce website built with HTML, CSS, and JS.</p>
+                        <div class="project-buttons">
+                            <a href="/Ecommerce-Websites/html/index.html" class="btn visit" target="_blank">Visit</a>
+                            <a href="https://github.com/Nitheshwarsivakumar/Portfolio.git" class="btn source" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-aos="fade-up">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="/portfolio/images/portfolio.png" alt="Portfolio">
+                    </div>
+                    <div class="back">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website showcasing my skills and projects.</p>
+                        <div class="project-buttons">
+                            <a href="https://yourportfolio.com" class="btn visit" target="_blank">Visit</a>
+                            <a href="https://github.com/yourgithub/portfolio" class="btn source" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/portfolio/JavaScript/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <p>© 2024 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="mailto:youremail@example.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/yourgithub" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+    </div>
+</footer>
+
 </body>
 </html>
